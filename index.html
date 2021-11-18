@@ -9,13 +9,14 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-    <header>
-      <div>
-        <div>
-          <div>
+    <header class="jumbotron">
+      <div class="container">
+        <div class="row row-header">
+          <div class="col-12 col-sm-6">
             <h1>Ristorante con Fusion</h1>
             <p>
               We take inspiration from the World's best cuisines, and create a
@@ -23,17 +24,17 @@
               your culinary senses!
             </p>
           </div>
-          <div></div>
+          <div class="col-12 col-sm"></div>
         </div>
       </div>
     </header>
 
-    <div>
-      <div>
-        <div>
+    <div class="container">
+      <div class="row row-content align-items-center">
+        <div class="col-12 col-sm-4 order-sm-1 col-md-3">
           <h3>Our Lipsmacking Culinary Creations</h3>
         </div>
-        <div>
+        <div class="col col-sm order-sm-0 col-md">
           <h2>Uthappizza</h2>
           <p>
             A unique combination of Indian Uthappam (pancake) and Italian pizza,
@@ -43,11 +44,11 @@
         </div>
       </div>
 
-      <div>
-        <div>
+      <div class="row row-content align-items-center">
+        <div class="col-12 col-sm-4 col-md-3">
           <h3>This Month's Promotions</h3>
         </div>
-        <div>
+        <div class="col col-sm col-md">
           <h2>Weekend Grand Buffet</h2>
           <p>
             Featuring mouthwatering combinations with a choice of five different
@@ -58,11 +59,11 @@
         </div>
       </div>
 
-      <div>
-        <div>
+      <div class="row row-content align-items-center">
+        <div class="col-12 col-sm-4 order-sm-last col-md-3">
           <h3>Meet our Culinary Specialists</h3>
         </div>
-        <div>
+        <div class="col col-sm order-sm-first col-md">
           <h2>Alberto Somayya</h2>
           <h4>Executive Chef</h4>
           <p>
@@ -75,19 +76,19 @@
       </div>
     </div>
 
-    <footer>
-      <div>
-        <div>
-          <div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 offset-1 col-sm-2">
             <h5>Links</h5>
-            <ul>
+            <ul class="list-unstyled">
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Menu</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
           </div>
-          <div>
+          <div class="col-7 col-sm-5">
             <h5>Our Address</h5>
             <address>
               121, Clear Water Bay Road<br />
@@ -98,19 +99,31 @@
               Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
             </address>
           </div>
-          <div>
-            <div>
-              <a href="http://google.com/+">Google+</a>
-              <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-              <a href="http://www.linkedin.com/in/">LinkedIn</a>
-              <a href="http://twitter.com/">Twitter</a>
-              <a href="http://youtube.com/">YouTube</a>
-              <a href="mailto:">Mail</a>
+          <div class="col-12 col-sm-4 align-self-center">
+            <div class="text-center">
+              <a class="link" href="http://google.com/+"
+                ><ion-icon name="logo-google"></ion-icon>Google+</a
+              >
+              <a class="link" href="http://www.facebook.com/profile.php?id="
+                ><ion-icon name="logo-facebook"></ion-icon>Facebook</a
+              >
+              <a class="link" href="http://www.linkedin.com/in/"
+                ><ion-icon name="logo-linkedin"></ion-icon>LinkedIn</a
+              >
+              <a class="link" href="http://twitter.com/"
+                ><ion-icon name="logo-twitter"></ion-icon>Twitter</a
+              >
+              <a class="link" href="http://youtube.com/"
+                ><ion-icon name="logo-youtube"></ion-icon>YouTube</a
+              >
+              <a class="link" href="mailto:"
+                ><ion-icon name="mail"></ion-icon>Mail</a
+              >
             </div>
           </div>
         </div>
-        <div>
-          <div>
+        <div class="row justify-content-center">
+          <div class="col-auto">
             <p>© Copyright 2018 Ristorante Con Fusion</p>
           </div>
         </div>
@@ -120,5 +133,13 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

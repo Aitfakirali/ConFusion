@@ -1,0 +1,52 @@
+.row-header {
+  margin: 0px auto;
+  padding: 0px auto;
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+}
+
+.footer {
+  color: rgb(224, 224, 224);
+  background-color: #242025;
+  margin: 0px auto;
+  padding: 20px 0px 20px 0px;
+}
+
+.jumbotron {
+  padding: 70px 30px 70px 30px;
+  margin: 0px auto;
+  background: #9575cd;
+  color: floralwhite;
+}
+
+.address {
+  font-size: 80%;
+  margin: 0px;
+  color: #f0f0f0;
+}
+
+a,
+.link {
+  color: lightcoral;
+}
+
+a:hover,
+.link:hover {
+  color: #9575cd;
+  text-decoration: none;
+}
+
+ion-icon {
+  font-size: 1.4rem;
+  margin: 5px 10px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+}
