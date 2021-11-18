@@ -46,7 +46,21 @@ ion-icon {
   margin: 5px 10px;
 }
 
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .link {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 620px) {
+  .flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
