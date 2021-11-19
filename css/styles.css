@@ -68,7 +68,7 @@ body {
 .nav-link {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .nav-link > span {
   font-size: 1.5rem;
