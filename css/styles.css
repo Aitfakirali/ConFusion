@@ -73,3 +73,9 @@ body {
   font-size: 1.5rem;
   margin-right: 0.3rem;
 }
+
+.tab-content {
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 20px;
+}
