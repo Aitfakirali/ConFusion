@@ -440,6 +440,14 @@
               ></span>
               <span class="sr-only">Next</span>
             </a>
+            <div class="btn-group" id="carouselButton">
+              <button class="btn btn-danger btn-sm" id="carousel-pause">
+                <span class="fa fa-pause"></span>
+              </button>
+              <button class="btn btn-danger btn-sm" id="carousel-play">
+                <span class="fa fa-play"></span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -598,5 +606,19 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    <script>
+      $(document).ready(() => {
+        const mycarousel = $("#mycarousel");
+        mycarousel.carousel({ interval: 2000 });
+        $("#carousel-pause").click(function () {
+          mycarousel.carousel("pause");
+        });
+
+        $("#carousel-play").click(function () {
+          mycarousel.carousel("cycle");
+        });
+      });
+    </script>
   </body>
 </html>

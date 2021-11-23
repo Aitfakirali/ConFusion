@@ -108,3 +108,9 @@ body {
 [data-slide="next"] {
   max-width: 100px;
 }
+
+#carouselButton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
