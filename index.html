@@ -107,7 +107,7 @@
             </li>
           </ul>
           <span class="navbar-text">
-            <a href="" data-toggle="modal" data-target="#loginModal">
+            <a id="loginButton" class="btn" role="button">
               <i class="fa fa-sign-in fa-lg"></i> Login
             </a>
           </span>
@@ -176,7 +176,7 @@
     <div class="modal fade" role="dialog" id="reservationModal">
       <div class="modal-dialog modal-lg" role="content">
         <div class="modal-content">
-          <div class="modal-header bg-warning fw-bold text-white">
+          <div class="modal-header fw-bold">
             <h3 class="modal-title">Reserve a Table</h3>
             <button class="close" type="button" data-dismiss="modal">
               &times;
@@ -334,10 +334,9 @@
           </div>
           <div class="col-12 col-sm-6 col-md-3 align-self-center">
             <a
-              class="btn btn-block btn-warning text-dark display-1"
+              class="btn btn-block btn-warning text-dark"
               type="button"
-              data-toggle="modal"
-              data-target="#reservationModal"
+              id="reservationButton"
               >Reserve Table</a
             >
           </div>
@@ -623,10 +622,15 @@
         });
       });
 
+      // reservation Button
       $(function () {
-        const element = $(".carousel-item > img");
-        console.log("Width : " + $(document).outerWidth(true));
-        console.log("Height : " + $(document).outerHeight(true));
+        $("#reservationButton").click(function () {
+          $("#reservationModal").modal("toggle");
+        });
+
+        $("#loginButton").click(function () {
+          $("#loginModal").modal("toggle");
+        });
       });
     </script>
   </body>
